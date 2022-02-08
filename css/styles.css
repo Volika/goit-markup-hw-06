@@ -516,30 +516,29 @@ a {
 .footer-icon-icon {
   fill: currentColor;
 }
-.input-mail-item {
+.input-mail {
+  font-size: 16px;
   height: 50px;
   border-radius: 4px;
-  font-weight: bold;
-  font-size: 16px;
   color: #ffffff;
 }
-.input-mail {
+.input-mail-item {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
   background-color: var(--dark-backg-color);
 }
-.input-mail:hover,
-.input-mail:focus {
+.input-mail-item:hover,
+.input-mail-item:focus {
   border: 1px solid var(--accent-color);
 }
 .btn-mail {
+  font-weight: bold;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 200px;
   color: #ffffff;
-
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
