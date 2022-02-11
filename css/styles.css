@@ -690,6 +690,10 @@ a {
   align-items: center;
   justify-content: center;
 }
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--accent-color);
+}
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -707,6 +711,7 @@ a {
 .modal-form {
 }
 .form-field {
+  margin-bottom: 10px;
 }
 .modal-label {
   font-size: 12px;
@@ -716,16 +721,41 @@ a {
   margin-bottom: 4px;
   display: block;
 }
+.field-container {
+  position: relative;
+}
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid var(--title-text-color);
   border-radius: 4px;
-  margin-bottom: 10px;
+
   padding-left: 42px;
   outline: none;
 }
-
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: var(--title-text-color);
+}
+.modal-text:hover,
+.modal-text:focus,
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+.modal-text:hover::placeholder,
+.modal-text:focus::placeholder,
+.modal-input:hover::placeholder,
+.modal-input:focus::placeholder {
+  color: var(--accent-color);
+}
+.modal-input:hover + .modal-icon,
+.modal-input:focus + .modal-icon {
+  fill: var(--accent-color);
+}
 .modal-text {
   width: 100%;
   height: 100px;
