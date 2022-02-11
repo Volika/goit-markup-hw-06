@@ -63,7 +63,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn" data-modal-open>
+          <button type="button" class="btn-btn hero-btn" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -474,23 +474,26 @@
             </li>
           </ul>
         </div>
-        <form class="container-email">
+        <!-- form  -->
+        <div class="container-email">
           <p class="footer-cont-text">Подпишитесь на рассылку</p>
-          <label for="item-mail"></label>
-          <input
-            type="email"
-            class="input-mail input-mail-item"
-            name="item-mail"
-            id="item-mail"
-            placeholder="E-mail"
-          />
-          <button type="submit" class="input-mail btn-mail">
-            Подписаться
-            <svg class="icon-send" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form>
+          <form class="form-input">
+            <label for="item-mail"></label>
+            <input
+              type="email"
+              class="input-mail-item"
+              name="item-mail"
+              id="item-mail"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="btn-btn btn-mail">
+              Подписаться
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -502,10 +505,63 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
+          <div class="user-info">
+            <div class="form-field">
+              <label for="user-name" class="modal-label">Имя</label>
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+                placeholder="John Dou"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="user-tel" class="modal-label">Телефон</label>
+
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-tel"
+                id="user-tel"
+                placeholder="+380"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="user-mail" class="modal-label">Почта</label>
+              <input
+                type="email"
+                class="modal-input"
+                name="user-mail"
+                id="user-mail"
+                placeholder="mail@mail.mail"
+              />
+            </div>
+            <div class="form-field">
+              <label for="user-text" class="modal-label">Комментарий</label>
+              <textarea
+                class="modal-text"
+                name="user-text"
+                id="user-text"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+          </div>
+          <div class="user-chek">
+            <input
+              type="checkbox"
+              class="modal-chek"
+              name="user-chek"
+              id="user-chek"
+            />
+            <label for="user-chek" class="chek-label"
+              >Соглашаюсь с рассылкой и принимаю
+              <span class="chek-label-span">Условия договора</span></label
+            >
+          </div>
+          <button type="submit" class="btn-btn btn-submit">Отправить</button>
         </form>
       </div>
     </div>
