@@ -767,16 +767,54 @@ a {
   margin-bottom: 20px;
 }
 .user-chek {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 30px; */
 }
+.modal-chek-text {
+  font-size: 14px;
+  color: var(--prim-text-color);
+  display: flex;
+  align-items: center;
+}
+.modal-chek-span {
+  display: inline-flex;
+}
+.modal-chek-span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.modal-chek:checked + .modal-chek-text div {
+  background-color: var(--accent-color);
+  border: none;
+}
+.modal-chek:checked + .modal-chek-text svg {
+  fill: #ffffff;
+}
+
+/* .modal-chek-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+.modal-chek:checked + .modal-chek-text::before {
+  background-image: url(../images/icon\ check.png);
+  border: none;
+} */
+
 .chek-label-span {
   color: var(--accent-color);
   text-decoration: underline;
-}
-.chek-label:hover,
-.chek-label:focus {
 }
 .btn-submit {
   padding: 10 32;
