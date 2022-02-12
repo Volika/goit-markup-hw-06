@@ -505,84 +505,80 @@
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <div class="user-info">
-            <div class="form-field">
-              <label for="user-name" class="modal-label">Имя</label>
-              <div class="field-container">
-                <input
-                  type="text"
-                  class="modal-input"
-                  name="user-name"
-                  id="user-name"
-                  placeholder="John Dou"
-                  required
-                />
-                <svg class="modal-icon" width="18" height="18">
-                  <use href="./images/symbol-defs.svg#person-black-18dp"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form-field">
-              <label for="user-tel" class="modal-label">Телефон</label>
-              <div class="field-container">
-                <input
-                  type="tel"
-                  class="modal-input"
-                  name="user-tel"
-                  id="user-tel"
-                  placeholder="+380"
-                  required
-                />
-                <svg class="modal-icon" width="18" height="18">
-                  <use href="./images/symbol-defs.svg#phone-black-18dp"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form-field">
-              <label for="user-mail" class="modal-label">Почта</label>
-              <div class="field-container">
-                <input
-                  type="email"
-                  class="modal-input"
-                  name="user-mail"
-                  id="user-mail"
-                  placeholder="mail@mail.mail"
-                />
-                <svg class="modal-icon" width="18" height="18">
-                  <use href="./images/symbol-defs.svg#email-black-18dp"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="form-field">
-              <label for="user-text" class="modal-label">Комментарий</label>
-              <textarea
-                class="modal-text"
-                name="user-text"
-                id="user-text"
-                placeholder="Введите текст"
-              ></textarea>
-            </div>
-          </div>
-          <div class="form-field">
-            <div class="user-chek">
+          <label for="user-name" class="modal-label"
+            >Имя
+            <span class="field-container">
               <input
-                type="checkbox"
-                class="modal-chek visually-hidden"
-                name="user-chek"
-                id="user-chek"
+                type="text"
+                class="modal-input"
+                name="user-name"
+                id="user-name"
+                placeholder="John Dou"
+                required
               />
-              <label for="user-chek" class="modal-chek-text">
-                <div class="modal-chek-span">
-                  <svg class="modal-chek-icon" width="16" height="15">
-                    <use
-                      href="./images/symbol-defs.svg#icon_check-vector"
-                    ></use>
-                  </svg>
-                </div>
-                Соглашаюсь с рассылкой и принимаю
-                <span class="chek-label-span"> Условия договора </span></label
-              >
-            </div>
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#person-black-18dp"></use>
+              </svg>
+            </span>
+          </label>
+          <label for="user-tel" class="modal-label"
+            >Телефон
+            <span class="field-container">
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-tel"
+                id="user-tel"
+                placeholder="+380"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#phone-black-18dp"></use>
+              </svg>
+            </span>
+          </label>
+          <label for="user-mail" class="modal-label"
+            >Почта
+            <span class="field-container">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-mail"
+                id="user-mail"
+                placeholder="mail@mail.mail"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/symbol-defs.svg#email-black-18dp"></use>
+              </svg>
+            </span>
+          </label>
+          <label for="user-text" class="modal-label"
+            >Комментарий
+            <textarea
+              class="modal-text"
+              name="user-text"
+              id="user-text"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <!-- checkbox -->
+          <div class="chek-field">
+            <input
+              type="checkbox"
+              class="modal-chek visually-hidden"
+              name="user-chek"
+              id="user-chek"
+            />
+            <span class="modal-chek-span">
+              <svg class="modal-chek-icon" width="16" height="15">
+                <use href="./images/symbol-defs.svg#icon_check-vector"></use>
+              </svg>
+            </span>
+            <label for="user-chek" class="modal-chek-text">
+              Соглашаюсь с рассылкой и принимаю
+              <span class="chek-label-span">&nbsp;Условия договора&nbsp;</span>
+            </label>
           </div>
           <button type="submit" class="btn-btn btn-submit">Отправить</button>
         </form>
